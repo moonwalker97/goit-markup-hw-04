@@ -38,7 +38,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -191,7 +191,10 @@ p {
 
 .hero {
   max-width: 1440px;
+  /* width: 100%; */
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -258,6 +261,20 @@ p {
   margin-right: 24px;
 }
 
+.about-item-bg {
+  background: #F4F4FD;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.about-item-icon {
+  width: 60px;
+  height: 64px;
+  margin: 24px 100px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -276,7 +293,7 @@ p {
 }
 
 .about-subtitle {
-  margin-top: 0;
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -386,6 +403,28 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--body-color);
+}
+
+
+.icons-item {
+  display: flex;
+  color: #4D5AE5;
+
+  /* background-color: #4D5AE5;
+  border-radius: 50%; */
+}
+
+.team-item-icon {
+  display: flex;
+  margin-right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.icons-item .team-item-icon:last-child {
+margin-right: 0;
 }
 
 /* Footer */
