@@ -51,7 +51,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-height: auto;
+  height: auto;
 }
 
 .section {
@@ -93,6 +93,7 @@ height: auto;
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-item {
@@ -106,14 +107,13 @@ ul {
   text-decoration: none;
 }
 
-h3{
+h3 {
   margin: 0;
 }
 
-p{
+p {
   margin: 0;
 }
-
 
 /* Логотип */
 
@@ -190,7 +190,17 @@ p{
 /* Hero */
 
 .hero {
-  background-color: var(--hero-background-color);
+  max-width: 1440px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: var(--hero-background-color); */
   /* text-align: center; */
   margin-top: 0;
   padding-bottom: 188px;
@@ -199,8 +209,6 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  
 }
 
 .hero-title {
@@ -250,9 +258,17 @@ p{
   margin-right: 24px;
 }
 
-.about-title {
-  /* visibility: hidden; */
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .about-list .about-item:last-child {
@@ -375,12 +391,8 @@ p{
 /* Footer */
 
 .footer {
-  padding: 0 15px;
+  padding: 100px 0;
   background-color: var(--footer-background-color);
-}
-
-.footer-container {
-  padding: 100px 15px;
 }
 
 .footer-logo {
@@ -425,12 +437,8 @@ p{
   margin-right: auto;
 }
 
-.project-title {
-  display: none;
-}
-
 .portfolio-section {
-padding-top: 96px;
+  padding-top: 96px;
 }
 
 .filter-list {
