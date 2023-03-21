@@ -494,11 +494,13 @@ p {
 }
 
 .footer-container {
-  
+
 }
 
 .footer-soc-container {
-display: flex;  
+display: flex;
+flex-direction: column;
+margin-right: 250px;
 }
 
 .footer-logo {
