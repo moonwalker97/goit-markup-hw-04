@@ -493,6 +493,14 @@ p {
   background-color: var(--footer-background-color);
 }
 
+.footer-container {
+  
+}
+
+.footer-soc-container {
+display: flex;  
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 16px;
@@ -523,11 +531,15 @@ p {
   margin: 0;
 }
 
+.footer-soc-text {
+  color: #ffffff;
+}
+
 .footer-icons {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 
 .footer-icons-item {
@@ -539,7 +551,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
