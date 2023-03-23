@@ -195,7 +195,6 @@ p {
 
 .hero {
   max-width: 1440px;
-  /* width: 100%; */
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -207,9 +206,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: var(--hero-background-color); */
-  /* text-align: center; */
-  margin-top: 0;
+  background-color: var(--hero-background-color);
   padding-bottom: 188px;
   padding-top: 188px;
   display: flex;
@@ -266,6 +263,7 @@ p {
 }
 
 .about-item-bg {
+  height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
   display: flex;
@@ -276,7 +274,6 @@ p {
 .about-item-icon {
   width: 60px;
   height: 64px;
-  margin: 24px 100px;
 }
 
 .visually-hidden {
@@ -458,25 +455,23 @@ p {
 }
 
 .customers-item {
-  border: 1px solid var(--customers-icons-color);
-  border-radius: 4px;
-  margin-right: 24px;
-  /* padding: 32px 16px; */
-  width: 168px;
-  height: 88px;
-}
-
-.customers-item:hover,
-.customers-item:focus {
-  border-color: var(--link-color-hover);
+margin-right: 24px;
 }
 
 .customers-list .customers-item:last-child {
   margin-right: 0;
 }
 
-.customers-link-icon {
-  fill: #8e8f99;
+.customers-link {
+display: flex;
+border: 1px solid var(--customers-icons-color);
+border-radius: 4px;
+padding: 16px 32px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--link-color-hover);
 }
 
 .customers-link-icon:hover,
@@ -485,7 +480,7 @@ p {
 }
 
 .customers-link-icon {
-  padding: 16px 32px;
+fill: #8e8f99;
 }
 
 /* Footer */
@@ -499,10 +494,13 @@ p {
   display: flex;
 }
 
+.footer-logo-container {
+  margin-right: 120px;
+}
+
 .footer-soc-container {
   display: flex;
   flex-direction: column;
-  margin-right: 120px;
 }
 
 .footer-logo {
@@ -544,7 +542,6 @@ p {
   display: flex;
   justify-content: center;
   gap: 16px;
-  /* margin-left: 120px; */
 }
 
 .footer-icons-item {
@@ -627,19 +624,21 @@ p {
 .row-list {
   display: flex;
   flex-wrap: wrap;
-  /* width: 1158px; */
 }
 
 .row-item {
-  display: block;
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
+}
+
+.row-link {
+  display: block;
   background: var(--hero-button-color);
 }
 
-.row-item:hover,
-.row-item:focus {
+.row-link:hover,
+.row-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -667,10 +666,6 @@ p {
 }
 
 .row-text {
-  /* margin-top: 0;
-  margin-bottom: 0; */
-  /* padding-bottom: 32px; */
-  /* padding-left: 16px; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
